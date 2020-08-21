@@ -1,0 +1,8 @@
+package com.clubmahindra.test;
+
+import com.baseUtil.TestBase;
+
+public class TripAdvisiorTest extends TestBase
+{
+
+}

@@ -1,0 +1,39 @@
+package com.facebook.test;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.baseUtil.TestBase;
+import com.pages.facbookPages.LoginPage;
+
+public class LoginPageTest extends TestBase
+{   
+	LoginPage loginPage;
+	@BeforeMethod
+	public void setUp(){
+		initialization();
+		 driver.get("https://www.facebook.com");
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		loginPage= new LoginPage();
+	
+	}
+	@Test
+	public void loginTest() throws InterruptedException
+	{
+		
+		  loginPage.sigIn(prop.getProperty("username"), prop.getProperty("password"));
+		  loginPage.postMessage("Hello");
+//		  driver.get("https://www.facebook.com");
+//          driver.findElement(By.id("email")).sendKeys("yourusername@gmail.com");
+//          driver.findElement(By.id("pass")).sendKeys("password");
+//          Thread.sleep(5000);
+//          driver.findElement(By.id("u_0_2")).click(); 
+//          Thread.sleep(7000);
+	}
+}

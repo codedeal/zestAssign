@@ -1,0 +1,12 @@
+package com.pages.facbookPages;
+
+import org.openqa.selenium.support.PageFactory;
+
+import com.baseUtil.TestBase;
+
+public class LoginPage extends TestBase
+{
+	public LoginPage(){
+		PageFactory.initElements(driver, this);
+	}
+}

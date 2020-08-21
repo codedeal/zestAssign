@@ -1,0 +1,15 @@
+package com.pages.amazonandFlipkart;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import com.baseUtil.TestBase;
+
+public class ProductPage extends TestBase 
+{ 
+	@FindBy(xpath="//*[@id='twotabsearchtextbox']")
+	WebElement serachBoxAmazon;
+	
+    
+}

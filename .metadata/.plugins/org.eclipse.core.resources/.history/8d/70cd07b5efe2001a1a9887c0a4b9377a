@@ -1,0 +1,10 @@
+package com.pages.amazonandFlipkart;
+
+import com.baseUtil.TestBase;
+
+public class ProductPage extends TestBase 
+{ 
+	
+	
+    
+}

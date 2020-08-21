@@ -1,0 +1,57 @@
+package com.pages.amazonandFlipkart;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.baseUtil.TestBase;
+
+//*[@id="nav-search"]/form/div[2]/div/input
+//*[@id="priceblock_ourprice"]
+public class ProductPage extends TestBase 
+{ 
+	@FindBy(xpath="//*[@id='twotabsearchtextbox']")
+	WebElement serachBoxAmazon;
+	@FindBy(xpath="//*[@id='nav-search']/form/div[2]/div/input")
+	WebElement searchButtonAmazon;
+	
+	@FindBy(xpath="//span[contains(text(),'Apple iPhone 11 (64GB) - Yellow')]")
+	WebElement searchProductIPhone;
+	
+	@FindBy(xpath="//*[@id='priceblock_ourprice']")
+	WebElement productPriceAmazon;
+	
+	public ProductPage(){
+		PageFactory.initElements(driver, this);
+	}
+	public void searchForProduct(String productName)
+	{
+		serachBoxAmazon.sendKeys(productName);
+		
+		serachBoxAmazon.sendKeys(Keys.ENTER);
+		//swipeToElement(searchProductIPhone);
+		searchProductIPhone.click();
+	}
+	
+	public void swipeToElement(WebElement element)
+	{
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();"
+                ,searchProductIPhone);
+	}
+	
+	
+	public double getPrice()
+	{
+		String priceDetail = productPriceAmazon.getText();
+        String[] arrOfStr = priceDetail.split(";"); 
+        System.out.println("price we got"+arrOfStr[1]);
+        String price=arrOfStr[1];
+        return Double.parseDouble(price);
+		
+	}
+	
+	
+    
+}

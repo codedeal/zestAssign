@@ -1,0 +1,45 @@
+package com.pages.amazonandFlipkart;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import com.baseUtil.TestBase;
+
+//*[@id="nav-search"]/form/div[2]/div/input
+//*[@id="priceblock_ourprice"]
+public class ProductPage extends TestBase 
+{ 
+	@FindBy(xpath="//*[@id='twotabsearchtextbox']")
+	WebElement serachBoxAmazon;
+	@FindBy(xpath="//*[@id='nav-search']/form/div[2]/div/input")
+	WebElement searchButtonAmazon;
+	
+	@FindBy(xpath="//span[contains(text(),'AppleiPhone 11 (64GB) - Yellow')]")
+	WebElement searchProductIPhone;
+	
+	@FindBy(xpath="//*[@id="priceblock_ourprice"]")
+	WebElement productPriceAmazon;
+	
+	public void searchForProduct(String productName)
+	{
+		serachBoxAmazon.sendKeys(productName);
+		
+		searchButtonAmazon.click();
+		swipeToElement(searchProductIPhone);
+	}
+	
+	public void swipeToElement(WebElement element)
+	{
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();"
+                ,searchProductIPhone);
+	}
+	
+	public void getPrice()
+	{
+		
+	}
+	
+	
+    
+}

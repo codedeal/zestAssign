@@ -1,0 +1,14 @@
+package com.amazon.test;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class ProductPageTest {
+	
+	@Test
+	public void test1()
+	{
+		Assert.assertEquals(true, true);
+	}
+
+}

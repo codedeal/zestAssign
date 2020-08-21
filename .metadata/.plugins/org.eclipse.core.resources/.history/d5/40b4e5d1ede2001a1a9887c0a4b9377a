@@ -1,0 +1,30 @@
+package com.amazon.test;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.baseUtil.TestBase;
+
+public class ProductPageTest  extends TestBase{
+	
+	@BeforeMethod
+	public void setUp(){
+		initialization();
+			
+	}
+	@Test
+	public void test1()
+	{
+		Assert.assertEquals(true, true);
+	}
+	
+	@AfterMethod
+	public void tearDown(){
+		System.out.println("in after");
+		driver.close();
+		driver.quit();
+	}
+
+}

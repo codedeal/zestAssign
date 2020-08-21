@@ -1,0 +1,27 @@
+package com.pages.facbookPages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.baseUtil.TestBase;
+
+public class LoginPage extends TestBase
+{
+	@FindBy(xpath="//*[@id='twotabsearchtextbox']")
+	WebElement username;
+	@FindBy(xpath="//*[@id='twotabsearchtextbox']")
+	WebElement password;
+	@FindBy(xpath="//*[@id='twotabsearchtextbox']")
+	WebElement signIn;
+	public LoginPage(){
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void sigIn(String user,String pass)
+	{
+		username.sendKeys(user);
+		password.sendKeys(pass);
+		signIn.click();
+	}
+}

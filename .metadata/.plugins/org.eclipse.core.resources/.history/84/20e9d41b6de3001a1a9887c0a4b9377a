@@ -1,0 +1,27 @@
+package com.pages.facbookPages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.baseUtil.TestBase;
+
+public class LoginPage extends TestBase
+{
+	@FindBy(id="email")
+	WebElement username;
+	@FindBy(id="pass")
+	WebElement password;
+	@FindBy(id="u_0_2")
+	WebElement signIn;
+	public LoginPage(){
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void sigIn(String user,String pass)
+	{
+		username.sendKeys(user);
+		password.sendKeys(pass);
+		signIn.click();
+	}
+}
