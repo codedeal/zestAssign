@@ -2,48 +2,48 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="36093" started-at="2020-08-21T10:51:27Z" finished-at="2020-08-21T10:52:03Z">
+  <suite name="Suite" duration-ms="33055" started-at="2020-08-21T16:59:09Z" finished-at="2020-08-21T16:59:42Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="36093" started-at="2020-08-21T10:51:27Z" finished-at="2020-08-21T10:52:03Z">
+    <test name="Test" duration-ms="33055" started-at="2020-08-21T16:59:09Z" finished-at="2020-08-21T16:59:42Z">
       <class name="com.facebook.test.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.facebook.test.LoginPageTest@6f7fd0e6]" name="setUp" is-config="true" duration-ms="2759" started-at="2020-08-21T10:51:53Z" finished-at="2020-08-21T10:51:56Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.facebook.test.LoginPageTest@6f7fd0e6]" name="setUp" is-config="true" duration-ms="2190" started-at="2020-08-21T16:59:34Z" finished-at="2020-08-21T16:59:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.facebook.test.LoginPageTest@6f7fd0e6]" name="loginTest" duration-ms="7225" started-at="2020-08-21T10:51:56Z" finished-at="2020-08-21T10:52:03Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.facebook.test.LoginPageTest@6f7fd0e6]" name="loginTest" duration-ms="5947" started-at="2020-08-21T16:59:36Z" finished-at="2020-08-21T16:59:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.facebook.test.LoginPageTest@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="350" started-at="2020-08-21T10:52:03Z" finished-at="2020-08-21T10:52:03Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.facebook.test.LoginPageTest@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="270" started-at="2020-08-21T16:59:42Z" finished-at="2020-08-21T16:59:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.facebook.test.LoginPageTest -->
       <class name="com.amazon.test.ProductPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.test.ProductPageTest@59f99ea]" name="setUp" is-config="true" duration-ms="4649" started-at="2020-08-21T10:51:27Z" finished-at="2020-08-21T10:51:32Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.test.ProductPageTest@59f99ea]" name="setUp" is-config="true" duration-ms="3938" started-at="2020-08-21T16:59:09Z" finished-at="2020-08-21T16:59:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="productComparisionTest()[pri:0, instance:com.amazon.test.ProductPageTest@59f99ea]" name="productComparisionTest" duration-ms="10053" started-at="2020-08-21T10:51:32Z" finished-at="2020-08-21T10:51:42Z">
+        <test-method status="PASS" signature="productComparisionTest()[pri:0, instance:com.amazon.test.ProductPageTest@59f99ea]" name="productComparisionTest" duration-ms="8444" started-at="2020-08-21T16:59:13Z" finished-at="2020-08-21T16:59:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productComparisionTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.test.ProductPageTest@59f99ea]" name="tearDown" is-config="true" duration-ms="246" started-at="2020-08-21T10:51:42Z" finished-at="2020-08-21T10:51:42Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.test.ProductPageTest@59f99ea]" name="tearDown" is-config="true" duration-ms="331" started-at="2020-08-21T16:59:21Z" finished-at="2020-08-21T16:59:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.amazon.test.ProductPageTest -->
       <class name="com.clubmahindra.test.TripAdvisiorTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.clubmahindra.test.TripAdvisiorTest@27efef64]" name="setUp" is-config="true" duration-ms="2541" started-at="2020-08-21T10:51:42Z" finished-at="2020-08-21T10:51:45Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.clubmahindra.test.TripAdvisiorTest@27efef64]" name="setUp" is-config="true" duration-ms="2514" started-at="2020-08-21T16:59:22Z" finished-at="2020-08-21T16:59:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="hotelReivewTest()[pri:0, instance:com.clubmahindra.test.TripAdvisiorTest@27efef64]" name="hotelReivewTest" duration-ms="7943" started-at="2020-08-21T10:51:45Z" finished-at="2020-08-21T10:51:53Z">
+        <test-method status="PASS" signature="hotelReivewTest()[pri:0, instance:com.clubmahindra.test.TripAdvisiorTest@27efef64]" name="hotelReivewTest" duration-ms="9091" started-at="2020-08-21T16:59:24Z" finished-at="2020-08-21T16:59:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hotelReivewTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.clubmahindra.test.TripAdvisiorTest@27efef64]" name="tearDown" is-config="true" duration-ms="296" started-at="2020-08-21T10:51:53Z" finished-at="2020-08-21T10:51:53Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.clubmahindra.test.TripAdvisiorTest@27efef64]" name="tearDown" is-config="true" duration-ms="306" started-at="2020-08-21T16:59:33Z" finished-at="2020-08-21T16:59:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

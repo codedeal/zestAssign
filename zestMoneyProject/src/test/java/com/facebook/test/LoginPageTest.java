@@ -1,8 +1,5 @@
 package com.facebook.test;
 
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -16,17 +13,14 @@ public class LoginPageTest extends TestBase
 	@BeforeMethod
 	public void setUp(){
 		initialization();
-		driver.get(prop.getProperty("urlfacebook"));
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		getUrl((prop.getProperty("urlfacebook")));
+		
 		loginPage= new LoginPage();
 	
 	}
 	
 	@Test
-	public void loginTest() throws InterruptedException
+	public void loginTest()
 	{
 		  loginPage.sigIn(prop.getProperty("username"), prop.getProperty("password"));
 		  loginPage.postMessage("Hello");

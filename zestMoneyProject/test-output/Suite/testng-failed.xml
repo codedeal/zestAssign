@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.facebook.test.LoginPageTest">
+      <class name="com.clubmahindra.test.TripAdvisiorTest">
         <methods>
           <include name="tearDown"/>
-          <include name="loginTest"/>
           <include name="setUp"/>
+          <include name="hotelReivewTest"/>
         </methods>
-      </class> <!-- com.facebook.test.LoginPageTest -->
+      </class> <!-- com.clubmahindra.test.TripAdvisiorTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

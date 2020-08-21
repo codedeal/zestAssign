@@ -1,0 +1,16 @@
+package com.baseUtil;
+
+public class Gestures  extends TestBase
+{
+	
+	Actions action ;
+	WebDriver driver;
+	
+	public Action(WebDriver driver)
+	{
+		this.driver=driver;
+		action = new Actions(driver);
+		
+	}
+
+}

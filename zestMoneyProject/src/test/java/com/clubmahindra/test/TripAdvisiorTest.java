@@ -1,13 +1,7 @@
 package com.clubmahindra.test;
-
-import static org.testng.Assert.assertEquals;
-
-import java.util.concurrent.TimeUnit;
-
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import com.baseUtil.TestBase;
 import com.pages.tripAdivsorPage.TripPage;
 
@@ -20,13 +14,8 @@ public class TripAdvisiorTest extends TestBase
 	{
 		
 		initialization();
-		driver.get(prop.getProperty("urltrip"));
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		trippage = new TripPage();
-		
+		getUrl(prop.getProperty("urltrip"));
+        trippage = new TripPage();	
 	}
 	   @Test
 	   public void hotelReivewTest()
@@ -37,7 +26,7 @@ public class TripAdvisiorTest extends TestBase
 		   trippage.giveReview();
 		   trippage.scrollToSubmitYourReview();
 		   trippage.check_checkbox();
-		   assertEquals(true, true);
+		 
 	   }
 	   
 		@AfterMethod

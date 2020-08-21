@@ -1,0 +1,25 @@
+package com.baseUtil;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Gestures  extends TestBase
+{
+	
+	Actions action ;
+	WebDriver driver;
+	
+	public Gestures(WebDriver driver)
+	{
+		this.driver=driver;
+		action = new Actions(driver);
+		
+	}
+	public void waitfortime(int time)
+	{
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+
+}
